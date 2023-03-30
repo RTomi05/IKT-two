@@ -1,0 +1,291 @@
+	/* cyrillic-ext */
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw0aXpsog.woff2) format('woff2');
+		unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+	}
+	/* cyrillic */
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw9aXpsog.woff2) format('woff2');
+		unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+	}
+	/* vietnamese */
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw2aXpsog.woff2) format('woff2');
+		unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	}
+	/* latin-ext */
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw3aXpsog.woff2) format('woff2');
+		unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	}
+	/* latin */
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aXo.woff2) format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+	@keyframes float {
+		0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.0);
+		transform: translatey(0px);
+		}
+		50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.0);
+		transform: translatey(-30px);
+		}
+		100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.0);
+		transform: translatey(0px);
+		}
+  	}
+  
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+  
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 10%;
+      background-color: #24252a;
+    }
+    body {
+    background-image: url('./media/hatter.jpg');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    }
+    h1{
+      text-align: center;
+      font-size: 72px;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      margin-top: 0px;
+      font-family: 'Inter', sans-serif;
+    }
+    h3{
+      text-align: center;
+      font-size: 15px;
+      font-weight: normal;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      margin-top: 0px;
+      font-family: 'Inter', sans-serif;
+    }
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }  
+    .szoveg{
+      text-align: center;
+      font-size: 20px;
+      color: aliceblue;
+      text-shadow: 1px 1px 3px #000000;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .p1{
+      text-align: center;
+      font-size: 50px;
+      color: goldenrod;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-shadow: 2px 2px 4px #000000;
+    }
+	.p2{
+		color: rgb(255, 255, 255);
+		text-align: center;
+		font-size: 30px;
+		color: goldenrod;
+		font-style: italic;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-shadow: 2px 2px 4px #000000;
+	}
+	div{
+		text-align: center;
+	}
+	.para-code{
+		text-align: justify; 
+		margin-left: 300px;
+		margin-right: 300px;
+		color: rgb(222, 210, 157);
+		font-size: 25px;
+	}
+	.code-editors-list{
+		color: rgb(222, 210, 157);
+		font-size: 25px;
+		list-style-type: circle;
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+	#IDE{
+		color: rgb(222, 210, 157);
+		font-size: 25px;
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+	#debug{
+		color: rgb(222, 210, 157);
+		font-size: 25px;
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+	.footer{
+		position: fixed;
+		padding: 0px 10px 0px 10px;
+		bottom: 0;
+		width: 100%;
+		height: 40px;
+		text-align: center;
+		outline-color: #000000;
+	}
+
+	#logo{
+		height: 20%;
+		width: 20%;
+		margin-right: auto;
+		overflow: hidden;
+		transform: translatey(0px);
+		animation: float 6s ease-in-out infinite;
+	}
+	
+	.nav__links {
+		list-style: none;
+		display: flex;
+	}
+	
+	.nav__links a,
+	.cta,
+	.overlay__content a {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		color: #edf0f1;
+		text-decoration: none;
+	}
+	
+	.nav__links li {
+		padding: 0px 20px;
+	}
+	
+	.nav__links li a {
+		transition: all 0.3s ease 0s;
+	}
+	
+	.nav__links li a:hover {
+		color: #0088a9;
+	}
+	a:visited{
+		color: rgb(222, 210, 157);
+	}
+	a{
+		color: rgb(222, 210, 157);
+	}
+	
+	.cta {
+		margin-left: 20px;
+		padding: 9px 25px;
+		background-color: rgb(221, 155, 0);
+		border: none;
+		border-radius: 50px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+	}
+	
+	.cta:hover {
+		background-color: rgba(222, 156, 0.8);
+	}
+	
+	/* Mobile Nav */
+	
+	.menu {
+		display: none;
+	}
+	
+	.overlay {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		background-color: #24252a;
+		overflow-x: hidden;
+		transition: all 0.5s ease 0s;
+	}
+	
+	.overlay--active {
+		width: 100%;
+	}
+	
+	.overlay__content {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.overlay a {
+		padding: 15px;
+		font-size: 36px;
+		display: block;
+		transition: all 0.3s ease 0s;
+	}
+	
+	.overlay a:hover,
+	.overlay a:focus {
+		color: #0088a9;
+	}
+	.overlay .close {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+		color: #edf0f1;
+		cursor: pointer;
+	}
+	
+	@media screen and (max-height: 450px) {
+		.overlay a {
+		font-size: 20px;
+		}
+		.overlay .close {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+		}
+	}
+	
+	@media only screen and (max-width: 800px) {
+		.nav__links,
+		.cta {
+		display: none;
+		}
+		.menu {
+		display: initial;
+		}
+	}
+	
